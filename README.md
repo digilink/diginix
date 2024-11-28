@@ -1,0 +1,2 @@
+# diginix
+My NixOS configuration
