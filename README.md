@@ -18,7 +18,7 @@ passwd; ip a
 ssh root@<nodeip>
 nix-shell -p git neovim
 git clone https://github.com/digilink/diginix.git
-cd diginix/nixos; nix --experimental-features "nix-command flakes" run github:nix-community/disko/latest -- --mode disko disko-zfs.nix
+cd diginix/nixos/kamino; nix --experimental-features "nix-command flakes" run github:nix-community/disko/latest -- --mode disko disko-zfs.nix
 
 # install
 mkdir -p /mnt/etc/nixos; cp ~/diginix/nixos/kamino/*.nix /mnt/etc/nixos/
