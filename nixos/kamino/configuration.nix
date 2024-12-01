@@ -53,12 +53,18 @@
     zoxide
     wget
   ];
-  
-  services.openssh = {
-    enable = true;
-    settings = {
-      PermitRootLogin = "prohibit-password"; 
-      PasswordAuthentication = false;
+
+  services = { 
+    
+    openssh = {
+      enable = true;
+      settings.PermitRootLogin = "prohibit-password"; 
+      settings.PasswordAuthentication = false;
+    };
+
+    # tailscale up --accept-routes
+    tailscale = {
+      enable = true;
     };
   };
 

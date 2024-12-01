@@ -4,7 +4,7 @@ My NixOS configuration (work in progress)
 
 Largely, I expect this to change over time MANY times. Only 1 system in focus at this time: 
 
-- kamino
+- kamino  
   forgejo server hosted at hetzner 
 
 To bootstrap:
